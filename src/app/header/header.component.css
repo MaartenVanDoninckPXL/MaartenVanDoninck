@@ -18,53 +18,18 @@
 
 .logo {
     height: 65px;
+    transition: height 0.25s ease;
 }
 
 .logo:hover {
     cursor: pointer;
+    height: 75px;
 }
 
-.cart {
-    display: flex;
-    position: relative;
+a {
+    transition: font-size 0.25s ease;
 }
 
-.cartCount {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    top: -7px;
-    right: -15px;
-    border-radius: 25px;
-    background-color: #f590c4;
-    color: white;
-    font-size: 14px;
-}
-
-.cartCount div {
-    margin: auto;
-}
-
-.right {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-}
-
-.right * {
-    margin-left: 25px;
-}
-
-.right img {
-    height: 40px;
-    cursor: pointer;
-}
-
-.sign-out {
-    position: absolute;
-    top: 60px;
-    right: 30px;
+a:hover {
+    font-size: 28px;
 }
