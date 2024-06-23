@@ -18,12 +18,32 @@
 
 .logo {
     height: 65px;
-    transition: height 0.25s ease;
+    transition: height 0.5s ease;
+    animation: roll-back 0.5s ease;
 }
 
 .logo:hover {
     cursor: pointer;
     height: 75px;
+    animation: roll 0.5s ease;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roll-back {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 a {
